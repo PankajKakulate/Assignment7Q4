@@ -10,5 +10,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Assignment7Q4';
+  public data : string = 'Marvellous Infosystem';
+
+  public uppercase(){
+   this.data = this.data.toUpperCase();
+  }
+  public lowercase(){
+    this.data = this.data.toLowerCase();
+  }
 }
